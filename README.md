@@ -7,7 +7,7 @@ Este es mi portafolio hecho en HTML y CSS
 *[LinkedIn](https://www.linkedin.com/in/danielbetancourtr)
 
 ## Ver ejemplo en vivo
-- [ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
+- [https://danielbetancourtr.github.io/mi-portafolio/](https://danielbetancourtr.github.io/mi-portafolio/)
 
 ## Instalación
 Este proyecto no requiere de intalaciones.
