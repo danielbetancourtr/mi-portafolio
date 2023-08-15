@@ -13,17 +13,14 @@
   
 <!--Menu-->
 <section>
-  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start bg-mf fixed-top">
-    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-    </a>
-    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="#" class="nav-link px-5 text-white">Inicio</a></li>
-      <li><a href="#sobre-mi" class="nav-link px-5 text-white">Sobre mi</a></li>
-      <li><a href="#portafolio" class="nav-link px-5 text-white">Portafolio</a></li>
-      <li><a href="#educacion" class="nav-link px-5 text-white">Educación</a></li>
-      <li><a href="#skill" class="nav-link px-5 text-white">Skills</a></li>
-      <li><a href="#contacto" class="nav-link px-5 text-white">Contacto</a></li>
+  <div class="d-flex flex-wrap align-items-center justify-content-center bg-mf fixed-top">
+    <ul class="nav col-12 col-lg-auto">
+      <li><a href="#" class="nav-link text-white">Inicio</a></li>
+      <li><a href="#sobre-mi" class="nav-link text-white">Sobre mi</a></li>
+      <li><a href="#portafolio" class="nav-link text-white">Portafolio</a></li>
+      <li><a href="#educacion" class="nav-link text-white">Educación</a></li>
+      <li><a href="#skill" class="nav-link  text-white">Skills</a></li>
+      <li><a href="#contacto" class="nav-link text-white">Contacto</a></li>
     </ul>
   </div>
 </section>
@@ -38,11 +35,11 @@
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Daniel Betancourt</h1>
         <h5>Bienvenido a mi portafolio como desarrollador web</h5>
         <p class="lead">Si quieres ponerte en contacto conmigo escríbeme al correo daniel.betancourt.rivera@gmail.com</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-info btn-lg px-4 me-md-2">
+        <div>
+          <button type="button" class="btn btn-info btn-lg">
             <a class="text-decoration-none text-white" href="descargas/CV-Daniel-Betancourt.pdf" target="_blank">Ver CV</a>
           </button>
-          <a href="https://www.linkedin.com/in/danielbetancourtr/" class="btn-lg px-4 me-md-2">
+          <a href="https://www.linkedin.com/in/danielbetancourtr/" class="btn-lg px-4 me-md-2 text-decoration-none">
             <img src="svg/linkedin.svg" width="45"height="45"></img>
           </a>
           <a href="https://github.com/danielbetancourtr" class="btn-lg px-4 me-md-2">
@@ -250,10 +247,8 @@
 <!--Skills-->
 <section class="bg-light" id="skill">
   <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47v6ndofd1vhwer01jpasjfg7e9xqgnwct285vdt51&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" height="300">
-      </div>
+    <div class="row flex-lg align-items-center g-5 py-5">
+      
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Skills</h1>
         <h5>Front-end</h5>
@@ -271,6 +266,9 @@
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <img src="svg/sqlserver.svg" height="45"/>
           <img src="svg/mysql.svg"  height="45"/>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47v6ndofd1vhwer01jpasjfg7e9xqgnwct285vdt51&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" height="300">
         </div>
       </div>
     </div>
@@ -299,8 +297,10 @@
 </section>
 <!--Footer-->
 <section class="bg-mf">
-  <footer>
-    <p class="text-white">todos los derechos reservados </p>
+  <footer class="container">
+    <div class="row">
+      <p class="text-white">todos los derechos reservados </p>
+    </div>
   </footer>
 </section>
 <script src="js/bootstrap.js"></script>
