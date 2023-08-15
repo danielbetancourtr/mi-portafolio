@@ -9,25 +9,26 @@
     <link rel="icon" type="image/x-icon" href="img/favico.ico">
     
 </head>
-<body class="bg-">
+<body class="bg-mf">
   
 <!--Menu-->
 <section>
-  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start bg-dark fixed-top">
+  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start bg-mf fixed-top">
     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
       <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
     </a>
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="#" class="nav-link px-5 text-white">Sobre mi</a></li>
-      <li><a href="#" class="nav-link px-5 text-white">Porfolio</a></li>
-      <li><a href="#" class="nav-link px-5 text-white">Educación</a></li>
-      <li><a href="#" class="nav-link px-5 text-white">Skills</a></li>
-      <li><a href="#" class="nav-link px-5 text-white">Contacto</a></li>
+      <li><a href="#" class="nav-link px-5 text-white">Inicio</a></li>
+      <li><a href="#sobre-mi" class="nav-link px-5 text-white">Sobre mi</a></li>
+      <li><a href="#portafolio" class="nav-link px-5 text-white">Portafolio</a></li>
+      <li><a href="#educacion" class="nav-link px-5 text-white">Educación</a></li>
+      <li><a href="#skill" class="nav-link px-5 text-white">Skills</a></li>
+      <li><a href="#contacto" class="nav-link px-5 text-white">Contacto</a></li>
     </ul>
   </div>
 </section>
 <!--Daniel-->
-<section>
+<section class="bg-light">
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
@@ -38,8 +39,8 @@
         <h5>Bienvenido a mi portafolio como desarrollador web</h5>
         <p class="lead">Si quieres ponerte en contacto conmigo escríbeme al correo daniel.betancourt.rivera@gmail.com</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-outline-info btn-lg px-4 me-md-2">
-            <a class="text-decoration-none" href="descargas/CV-Daniel-Betancourt.pdf" download>Descarga CV</a>
+          <button type="button" class="btn btn-info btn-lg px-4 me-md-2">
+            <a class="text-decoration-none text-white" href="descargas/CV-Daniel-Betancourt.pdf" target="_blank">Ver CV</a>
           </button>
           <a href="https://www.linkedin.com/in/danielbetancourtr/" class="btn-lg px-4 me-md-2">
             <img src="svg/linkedin.svg" width="45"height="45"></img>
@@ -53,10 +54,10 @@
   </div>
 </section>
 <!--Sobre mi-->
-<section class="bg-light">
-  <div class="container col-xxl-8 px-4 py-5">
+<section class="bg-color"  id="sobre-mi">
+  <div class="container col-xxl-8 px-4 py-5 text-white">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sobre mi</h1>
+      <h1 class="display-5 fw-bold lh-1 mb-3">Sobre mi</h1>
         <p>
           Comencé mi trayectoria en el campo del desarrollo cuando ingresé al Instituto AIEP en 2019. Desde entonces,
           he estado inmerso en este apasionante y desafiante mundo, aprendiendo constantemente. Actualmente, estoy en búsqueda de 
@@ -67,7 +68,7 @@
   </div>
 </section>
 <!--Porfolio-->
-<section>
+<section class="bg-light"  id="portafolio">
   <div class="album py-5">
     <div class="container">
       <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Portafolio</h1>
@@ -214,22 +215,25 @@
   </div>
 </section>
 <!--Educación-->
-<section class="bg-light">
-<div class="container col-xxl-8 px-4 py-5">
-  <h1 class="fw-bold text-body-emphasis lh-1 mb-3">Educación</h1>
-  <div class="row flex-lg-row-reverse align-items-center py-3">
-    <p class="col-2">2019 - 2023</p>
+<section class="bg-color"  id="educacion">
+<div class="container col-xxl-8 px-4 py-5 text-white">
+  <h1 class="fw-bold lh-1 mb-3">Educación</h1>
+  <div class="row flex-lg align-items-center py-3">
     <h3 class="col-10">Ingenieria en ejecucion en informatica</h3>
+    <p class="col-2">2019 - 2023</p>
     <p class="col-12">
         Instituto profesional AIEP
     </p>
     <p>
        BASES DE DATOS RELACIONALES - METODOLOGIAS DE DESARROLLO DE SOFTWARE - ARQUITECTURA DE SOFTWARE - EVALUACIÓN DE PROYECTOS INFORMÁTICOS - PROGRAMACIÓN
     </p>
+    <button class="col-2 btn btn-secondary">
+      <a class="text-decoration-none text-white" href="descargas/Certificado de Titulo.pdf" target="_blank">Ver certificado</a>
+    </button>
   </div>
-  <div class="row flex-lg-row-reverse align-items-center">
-    <p class="col-2">2019 - 2023</p>
+  <div class="row flex-lg align-items-center">
     <h3 class="col-10">Curso python</h3>
+    <p class="col-2">2019 - 2023</p>
     <p class="col-12">
       Udemy
     </p>
@@ -237,15 +241,68 @@
       PYTHON - DJANGO - ORM <br>
       duración - 15 hrs
     </p>
+    <button class="col-2 btn btn-secondary">
+      <a class="text-decoration-none text-white" href="https://www.udemy.com/certificate/UC-e8206737-e862-4b7d-aa62-30d56749d13c/" target="_blank">Ver certificado</a>
+    </button>
   </div>
 </div>
 </section>
 <!--Skills-->
-<section>
-
+<section class="bg-light" id="skill">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47v6ndofd1vhwer01jpasjfg7e9xqgnwct285vdt51&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" height="300">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Skills</h1>
+        <h5>Front-end</h5>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <img src="svg/html.svg" width="45" height="45"/>
+          <img src="svg/css.svg" width="45" height="45"/>
+          <img src="svg/bootstrap.svg" width="45" height="45"/>          
+        </div>
+        <h5>Lenguajes y Frameworks</h5>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <img src="svg/python.svg" width="45" height="45"/>
+          <img src="svg/django.svg" width="45" height="45"/>
+        </div>
+        <h5>Bases de datos</h5>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <img src="svg/sqlserver.svg" height="45"/>
+          <img src="svg/mysql.svg"  height="45"/>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!--Contacto-->
-<section class="bg-light"></section>
+<section class="bg-color"  id="contacto">
+  <div class="container col-xxl-8 px-4 py-5 text-white">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Contacto</h1>
+        <p>Si deseas ponerte en contacto conmigo, aquí tienes mis datos. Estaré encantado de responder lo más pronto posible.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://api.whatsapp.com/send?l=es&phone=56947859453&text=Hola" class="btn-lg px-4 me-md-2">
+            <img src="svg/whatsapp.svg" height="45"></img>
+          </a>
+          <a href="https://www.linkedin.com/in/danielbetancourtr/" class="btn-lg px-4 me-md-2">
+            <img src="svg/linkedin.svg" height="45"></img>
+          </a>
+            <img src="svg/gmail.svg" width="45"height="45"></img>daniel.betancort.rivera@gmail.com
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--Footer-->
+<section class="bg-mf">
+  <footer>
+    <p class="text-white">todos los derechos recervados </p>
+  </footer>
+</section>
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
