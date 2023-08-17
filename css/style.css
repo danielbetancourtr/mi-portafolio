@@ -14,3 +14,17 @@
 .text-color-blue{
     color: #865DFF;
 }
+
+/* Estilo para el fondo detrás del botón en pantallas pequeñas */
+
+.navbar-toggler {
+    margin-left: auto;
+}
+.navbar-toggler-icon span {
+    background-color: white;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+  

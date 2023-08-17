@@ -7,42 +7,53 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favico.ico">
-    
 </head>
-<body class="bg-mf">
+<body>
   
-<!--Menu-->
+<!--Boton menu-->
 <section>
-  <div class="d-flex flex-wrap align-items-center justify-content-center bg-mf fixed-top">
-    <ul class="nav col-12 col-lg-auto">
-      <li><a href="#" class="nav-link text-white">Inicio</a></li>
-      <li><a href="#sobre-mi" class="nav-link text-white">Sobre mi</a></li>
-      <li><a href="#portafolio" class="nav-link text-white">Portafolio</a></li>
-      <li><a href="#educacion" class="nav-link text-white">Educación</a></li>
-      <li><a href="#skill" class="nav-link  text-white">Skills</a></li>
-      <li><a href="#contacto" class="nav-link text-white">Contacto</a></li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-expand-md pt-0 mt-0 ">
+    <div class="container-fluid bg-mf  bg-behind-button ">
+      <button class="navbar-toggler bg-light ml-auto" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>  
+<!--Menu-->
+      <div class="collapse navbar-collapse bg-mf justify-content-center" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link text-white">Inicio</a></li>
+          <li class="nav-item"><a href="#sobre-mi" class="nav-link text-white">Sobre mi</a></li>
+          <li class="nav-item"><a href="#portafolio" class="nav-link text-white">Portafolio</a></li>
+          <li class="nav-item"><a href="#educacion" class="nav-link text-white">Educación</a></li>
+          <li class="nav-item"><a href="#skill" class="nav-link  text-white">Skills</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link text-white">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </section>
 <!--Daniel-->
 <section class="bg-light">
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
+      <div class="col-10 col-sm-8 col-lg-5">
         <img src="img/foto.jpeg" class="rounded-circle" alt="Bootstrap Themes" width="200" height="200" loading="lazy">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-7">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Daniel Betancourt</h1>
-        <h5>Bienvenido a mi portafolio como desarrollador web</h5>
-        <p class="lead">Si quieres ponerte en contacto conmigo escríbeme al correo daniel.betancourt.rivera@gmail.com</p>
+        <p class="lead"></p>Bienvenido a mi portafolio como desarrollador web.<br>
+        Si quieres ponerte en contacto conmigo escríbeme al correo <a class="text-decoration-none text-dark" href="mailto:daniel.betancourt.rivera@gmail.com">daniel.betancourt.rivera@gmail.com</a></p>
         <div>
           <button type="button" class="btn btn-info btn-lg">
             <a class="text-decoration-none text-white" href="descargas/CV-Daniel-Betancourt.pdf" target="_blank">Ver CV</a>
           </button>
-          <a href="https://www.linkedin.com/in/danielbetancourtr/" class="btn-lg px-4 me-md-2 text-decoration-none">
+          <a href="https://www.linkedin.com/in/danielbetancourtr/" class="btn-lg px-5 text-decoration-none">
             <img src="svg/linkedin.svg" width="45"height="45"></img>
           </a>
-          <a href="https://github.com/danielbetancourtr" class="btn-lg px-4 me-md-2">
+          <a href="https://github.com/danielbetancourtr" class="btn-lg ">
             <img src="svg/github.svg" width="45"height="45"></img>
           </a>
         </div>
@@ -52,7 +63,7 @@
 </section>
 <!--Sobre mi-->
 <section class="bg-color"  id="sobre-mi">
-  <div class="container col-xxl-8 px-4 py-5 text-white">
+  <div class="container col-lg-12 px-4 py-5 text-white">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <h1 class="display-5 fw-bold lh-1 mb-3">Sobre mi</h1>
         <p>
@@ -216,7 +227,7 @@
 <div class="container col-xxl-8 px-4 py-5 text-white">
   <h1 class="fw-bold lh-1 mb-3">Educación</h1>
   <div class="row flex-lg align-items-center py-3">
-    <h3 class="col-10">Ingenieria en ejecucion en informatica</h3>
+    <h3 class="col-10">Ingeniería en ejecución en informática</h3>
     <p class="col-2">2019 - 2023</p>
     <p class="col-12">
         Instituto profesional AIEP
@@ -224,13 +235,13 @@
     <p>
        BASES DE DATOS RELACIONALES - METODOLOGIAS DE DESARROLLO DE SOFTWARE - ARQUITECTURA DE SOFTWARE - EVALUACIÓN DE PROYECTOS INFORMÁTICOS - PROGRAMACIÓN
     </p>
-    <button class="col-2 btn btn-secondary">
+    <button class="col-3 btn btn-secondary">
       <a class="text-decoration-none text-white" href="descargas/Certificado de Titulo.pdf" target="_blank">Ver certificado</a>
     </button>
   </div>
   <div class="row flex-lg align-items-center">
     <h3 class="col-10">Curso python</h3>
-    <p class="col-2">2019 - 2023</p>
+    <p class="col-2">2023</p>
     <p class="col-12">
       Udemy
     </p>
@@ -238,7 +249,7 @@
       PYTHON - DJANGO - ORM <br>
       duración - 15 hrs
     </p>
-    <button class="col-2 btn btn-secondary">
+    <button class="col-3 btn btn-secondary">
       <a class="text-decoration-none text-white" href="https://www.udemy.com/certificate/UC-e8206737-e862-4b7d-aa62-30d56749d13c/" target="_blank">Ver certificado</a>
     </button>
   </div>
@@ -247,18 +258,20 @@
 <!--Skills-->
 <section class="bg-light" id="skill">
   <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg align-items-center g-5 py-5">
-      
+    <div class="row flex-lg-row-reverse  align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47v6ndofd1vhwer01jpasjfg7e9xqgnwct285vdt51&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" height="300">
+      </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Skills</h1>
         <h5>Front-end</h5>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-3">
           <img src="svg/html.svg" width="45" height="45"/>
           <img src="svg/css.svg" width="45" height="45"/>
           <img src="svg/bootstrap.svg" width="45" height="45"/>          
         </div>
         <h5>Lenguajes y Frameworks</h5>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-3">
           <img src="svg/python.svg" width="45" height="45"/>
           <img src="svg/django.svg" width="45" height="45"/>
         </div>
@@ -267,9 +280,7 @@
           <img src="svg/sqlserver.svg" height="45"/>
           <img src="svg/mysql.svg"  height="45"/>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e47v6ndofd1vhwer01jpasjfg7e9xqgnwct285vdt51&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" height="300">
-        </div>
+        
       </div>
     </div>
   </div>
@@ -282,27 +293,37 @@
         <h1 class="display-5 fw-bold lh-1 mb-3">Contacto</h1>
         <p>Si deseas ponerte en contacto conmigo, aquí tienes mis datos. Estaré encantado de responder lo más pronto posible.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a href="https://api.whatsapp.com/send?l=es&phone=56997772394&text=Hola" class="btn-lg px-4 me-md-2">
-            <img src="svg/whatsapp.svg" height="45"></img>
+          <div>
+          <a href="https://api.whatsapp.com/send?l=es&phone=56997772394&text=Hola" class="btn-lg btn btn-outline-dark rounded-circle ">
+            <img src="svg/whatsapp.svg"></img>
           </a>
-          <a href="https://www.linkedin.com/in/danielbetancourtr/" class="btn-lg px-4 me-md-2">
-            <img src="svg/linkedin.svg" height="45"></img>
-          </a>
-            <img src="svg/gmail.svg" width="45"height="45"></img>daniel.betancort.rivera@gmail.com
         </div>
-
+          <div>
+          <a href="https://www.linkedin.com/in/danielbetancourtr/" class=" btn btn-outline-dark rounded-circle">
+            <img src="svg/linkedin.svg"></img>
+          </a>
+        </div>
+          <div>
+            <img src="svg/gmail.svg"></img><a class="text-decoration-none text-white" href="mailto:daniel.betancourt.rivera@gmail.com">daniel.betancort.rivera@gmail.com</a>
+          </div>
       </div>
     </div>
   </div>
 </section>
 <!--Footer-->
-<section class="bg-mf">
-  <footer class="container">
-    <div class="row">
-      <p class="text-white">todos los derechos reservados </p>
-    </div>
+<section class="bg-mf text-center">
+  <footer class="py-1">
+    <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
+      <li class="nav-item"><a href="#sobre-mi" class="nav-link px-2 text-white">Sobre mi</a></li>
+      <li class="nav-item"><a href="#portafolio" class="nav-link px-2 text-white">Portafolio</a></li>
+      <li class="nav-item"><a href="#educacion" class="nav-link px-2 text-white">Educación</a></li>
+      <li class="nav-item"><a href="#skill" class="nav-link px-2 text-white">Skills</a></li>
+      <li class="nav-item"><a href="#contacto" class="nav-link px-2 text-white">Contacto</a></li>
+    </ul>
+    <p class="text-center text-white">© 2023 Daniel Betancourt</p>
   </footer>
 </section>
-<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
